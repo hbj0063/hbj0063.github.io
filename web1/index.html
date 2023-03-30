@@ -18,15 +18,15 @@
 
     <!-- https://okgunyang.github.io/web1 -->
     <!-- 오픈그래프 설정 -->
-    <meta name="og:site_name" content="사이트 이름">
+    <!--<meta name="og:site_name" content="사이트 이름">
     <meta name="og:title" content="포트폴리오 - 식스샵">
     <mata name="og:url" content="https://okgunyang.github.io/web1">
-    <mata name="og:image" content="./images/thumbnail.jpg">  
+    <mata name="og:image" content="./images/thumbnail.jpg">-->  
           
     <!-- 기본 폰트 및 초기화 로딩 -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!--<link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Noto+Sans+KR&display=swap" rel="stylesheet">-->
     <!-- 스타일 초기화 -->
     <!-- reset.css나 normalize.css를 CDN 또는 다운로드 받아 link로 연결 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
@@ -114,7 +114,17 @@
 
     .vs { clear:both; position:relative; width: 100vw; height:calc(100vh - 135px);
     overflow:hidden; }
-    .vs video { display:block; width: 100%;}
+    .vs video { display:block; width: 100%; }
+
+    .page { clear:both; position:relative; width: 100vw; height: 100vh; }
+    .page_wrap { clear:both; position:relative;margin: 0 auto;}
+    .page_title{text-align: center; font-size:48px; padding-top: 1em;;}
+
+     #page1{background-color: yellow; color:#333; }   
+     #page2{background-color: #41c365; color:#222;}
+     #page3{background-color: #91ddec;}
+     #page4{background-color: white}
+     #page5{background-color: greenyellow; }
     </style>
 </head>
 <body>
@@ -162,7 +172,26 @@
             </figure>
         </div>
         <footer class="ft">
-
+            <section class="page" id="page1">
+                <h2 class="page_title">성공적인 창업을 위한 모든 것이 한곳에</h2>
+                <div class="page_wrap"></div>
+            </section>
+            <section class="page" id="page2">
+                <h2 class="page_title">식스샵의 브랜드 커뮤니티와 함께하세요</h2>
+                <div class="page_wrap"></div>
+            </section>
+            <section class="page" id="page3">
+                <h2 class="page_title">다양한 카테고리의 브랜드 상점들을 둘러보세요</h2>
+                <div class="page_wrap"></div>
+            </section>
+            <section class="page" id="page4">
+                <h2 class="page_title">누적 거래액 9,593억 돌파!</h2>
+                <div class="page_wrap"></div>
+            </section>
+            <section class="page" id="page5">
+                <h2 class="page_title">언제든 궁금하신 게 있으시면 식스샵 고객센터를 찾아주세요</h2>
+                <div class="page_wrap"></div>
+            </section>
         </footer>
     </div>
     <div class="fix_area">
